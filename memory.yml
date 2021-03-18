@@ -22,6 +22,6 @@
   tasks:
     - name: copy repo from control node to other servers
       copy:
-        src: /etc/yum.repos.d/open_three-tier-app.repo
+        src: files/open_three-tier-app.repo
         dest: /etc/yum.repos.d/open_three-tier-app.repo
 
