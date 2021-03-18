@@ -20,7 +20,7 @@
 - hosts: all:!ungrouped
   become: yes
   tasks:
-    - name: copy repo
+    - name: copy repo from control node to other servers
       copy:
         src: /etc/yum.repos.d/open_three-tier-app.repo
         dest: /etc/yum.repos.d/open_three-tier-app.repo
